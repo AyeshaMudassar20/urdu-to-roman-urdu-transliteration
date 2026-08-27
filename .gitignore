@@ -12,3 +12,14 @@ venv/
 best_seq2seq_model.pkl
 *.pkl
 checkpoints/
+
+# SentencePiece tokenizer binaries are regenerated locally via
+# `python build_tokenizers.py` rather than committed (only the small
+# human-readable .vocab files are tracked).
+data/tokenizers/*.model
+
+# Full training corpus (16,800 lines) is not committed due to size.
+# Only the validation and test splits are tracked for reference and
+# reproducible evaluation -- see README for details.
+data/splits/train.ur
+data/splits/train.en
