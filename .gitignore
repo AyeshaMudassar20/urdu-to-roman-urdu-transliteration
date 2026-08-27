@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+*.log
+
+# Trained model checkpoint is not committed (73MB+, exceeds GitHub's web
+# upload limit). Retrain locally with `python train.py` to regenerate it.
+best_seq2seq_model.pkl
+*.pkl
+checkpoints/
